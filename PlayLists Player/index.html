@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Bangers|Frijole|Trade+Winds" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bangers|Trade+Winds" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bangers" rel="stylesheet">
+    <script type="text/javascript" src=jquery.arctext.js></script>
+
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="body.css">
+    <link rel="stylesheet" href="add_edit_playlist.css">
+    <link rel="stylesheet" href="add_edit_songs.css">
+    <link rel="stylesheet" href="delete_playlist.css">
+
+    <title> Title </title>
+</head>
+
+<style>
+
+</style>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container-fluid">
+            <div class=" nav_logo">
+                <span class=" logo1">SPOTY-ME</span>
+            </div>
+            <ul class="nav navbar-nav">
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#Modal-add-playlist" id="add_s">
+                        <span class="glyphicon glyphicon-plus-sign"></span><span>Add new playlist</span>
+                    </a>
+                </li>
+            </ul>
+            <div class="navbar-form navbar-right">
+                <div class="input-group">
+                    <input type="text" id="find" size="26" class="form-control" placeholder="Search Playlist">
+
+                    <div class="input-group-btn">
+                        <button class="btn btn-default" type="submit" id="search">
+                            <b>ALL</b>
+                        </button>
+                    </div>
+                </div>
+                <div id="msearch"></div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="main">
+        </div>
+    </div>
+
+    <!--ADD_PLAYLIST Modal -->
+    <div class="modal fade" id="Modal-add-playlist" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content add_edit_modal">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title" id="header">Add New Playlist</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="row modal_form">
+                        <div class="col-lg-6 forms">
+                            <div class='form-group'>
+                                <label for='name'>Playlist Name:</label>
+                                <input type='text' name='name' class='form-control' id='name' placeholder='Enter Playlist Name' value=''>
+                                <span class='name_massage'></span>
+                            </div>
+                            <div class='form-group'>
+                                <label for='url'>Playlist Url:</label>
+                                <input type='text' name='url' class='form-control' id='image_url' placeholder='Enter Playlist Url' value=''>
+                                <span class='url_massage'></span>
+                            </div>
+                            <div class=" add_edit_buttons">
+                                <button type="button" id="add" class="btn btn-success add_edit">Next</button>
+                                <button type="button" class="btn btn-danger reset">Reset Fields</button>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 modal_img" id="add_playlist">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <!--ADD_SONGS Modal -->
+    <div class="modal fade" id="Modal-add-songs" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content add_songs">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Add Playlist Songs</h4>
+                </div>
+                <div class="modal-body add_edit_body">
+                    <form class="form-inline">
+                        <div id="add_song">
+                            <div class="group_add">
+                                <div class='form-group'>
+                                    <label for='song_url'>Song URL:</label>
+                                    <input type='text' name='song_url' size="40" class='form-control url_input' id='song_url1' placeholder='Enter Song Url' value=''>
+                                    <label for='song_name' class="add_name">Name:</label>
+                                    <input type='text' name='song_name' class='form-control name_input' id='song_name1' placeholder='Enter Song Name' value=''>
+                                </div>
+                                <span class='s_name_massage' id='a_group0'></span>
+                            </div>
+
+                            <div class="group_add">
+                                <div class='form-group'>
+                                    <label for='song_url'>Song URL:</label>
+                                    <input type='text' name='song_url' size="40" class='form-control url_input' id='song_url2' placeholder='Enter Song Url' value=''>
+                                    <label for='song_name' class=" add_name">Name:</label>
+                                    <input type='text' name='song_name' class='form-control name_input' id='song_name2' placeholder='Enter Song Name' value=''>
+                                </div>
+                                <span class='s_name_massage' id='a_group1'></span>
+                            </div>
+
+                            <div class="group_add">
+                                <div class='form-group'>
+                                    <label for='song_url'>Song URL:</label>
+                                    <input type='text' name='song_url' size="40" class='form-control url_input' id='song_url3' placeholder='Enter Song Url' value=''>
+                                    <label for='song_name' class=" add_name">Name:</label>
+                                    <input type='text' name='song_name' class='form-control name_input' id='song_name2' placeholder='Enter Song Name' value=''>
+                                </div>
+                                <span class='s_name_massage' id='a_group2'></span>
+                            </div>
+                        </div>
+                        <div class="modal-footer play_songs">
+
+                            <button type="button" id="add-song" class="btn btn-link add-song"><span class="glyphicon glyphicon-plus-sign"></span><span>Add another song</span></button>
+                            <button type="button" class="btn btn-success" id="finish">FINISH & SAVE</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--EDIT_PLAYLIST Modal -->
+    <div class="modal fade" id="Modal-edit-playlist" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content add_edit_modal">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title" id="edit_header">Edit Playlist</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="row modal_form">
+                        <div class="col-lg-6 forms">
+                            <div class='form-group'>
+                                <label for='name'>Playlist Name:</label>
+                                <input type='text' name='name' class='form-control' id='edit_name' placeholder='Enter Playlist Name' value=''>
+                                <span class='name_massage'></span>
+                            </div>
+                            <div class='form-group'>
+                                <label for='url'>Playlist Url:</label>
+                                <input type='text' name='url' class='form-control' id='edit_image_url' placeholder='Enter Playlist Url' value=''>
+                                <span class='url_massage'></span>
+                            </div>
+                            <div class="add_edit_buttons">
+                                <button type="button" id="update" class="btn btn-success add_edit">Update</button>
+                                <button type="button" class="btn btn-danger reset">Reset Fields</button>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 modal_img" id="edit_playlist">
+                            <img src="" class="add_edit_img">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <!--EDIT_SONGS Modal -->
+    <div class="modal fade" id="Modal-edit-songs" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content edit_songs">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Edit Playlist Songs</h4>
+                </div>
+                <div class="modal-body add_edit_body">
+                    <form class="form-inline">
+                        <div id="edit_song">
+
+                        </div>
+                        <div class="modal-footer play_songs">
+                            <button type="button" id="edit-song" class="btn btn-link"><span class="glyphicon glyphicon-plus-sign"></span><span>Add another song</span></button>
+                            <button type="button" class="btn btn-success" id="update_songs">FINISH & SAVE</button>
+                        </div>
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <!--DELETE_PLAYLIST Modal -->
+    <div class="modal fade" id="Modal-delete" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content del_m">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Delete Playlist</h4>
+                </div>
+                <div class="modal-body" id="del-playlist">
+                    <p>Are you sure you want to delete playlist:</p>
+                    <span id="del_playlist"></span>
+                    <button type="button" id="delete" class="btn btn-danger">Delete</button>
+                    <button type="button" id="close_del" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+                <!--                <div class="modal-footer">-->
+                <!--
+                    <button type="button" id="delete" class="btn btn-danger">Delete</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+-->
+                <!--                </div>-->
+            </div>
+
+        </div>
+    </div>
+
+    <script type="text/javascript" src="varaibles.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+    <script type="text/javascript" src="add_playlist.js"></script>
+    <script type="text/javascript" src="edit_playlist.js"></script>
+    <script type="text/javascript" src="delete_playlist.js"></script>
+    <script type="text/javascript" src="validation.js"></script>
+    <script type="text/javascript" src="reset_feilds.js"></script>
+    <script type="text/javascript" src="audio_player.js"></script>
+
+</body>
+
+</html>

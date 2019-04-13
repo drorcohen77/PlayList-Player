@@ -1,0 +1,64 @@
+/* NAVBAR: */
+
+.navbar {
+    height: 80px;
+}
+
+.container-fluid {
+    position: relative;
+}
+
+.logo1 {
+    position: absolute;
+    top: 22px;
+    left: 30px;
+    font-size: 25px;
+    font-family: 'Frijole', cursive;
+    color: #ef0000;
+}
+
+.nav {
+    position: absolute;
+    top: 17px;
+    left: 240px;
+    font-size: 15px;
+}
+
+.navbar-form {
+    position: absolute;
+    top: 15px;
+    right: 150px;
+}
+
+.navbar-inverse {
+    background-color: #0e0e0e;
+    border-color: #0e0e0e;
+}
+
+.glyphicon-plus-sign {
+    margin-right: 10px;
+}
+
+#add_s {
+    font-family: 'Trade Winds', cursive;
+}
+
+#search {
+    height: 34px;
+    font-family: 'Trade Winds', cursive;
+    background-color: lightgray;
+}
+
+#search_alert {
+    padding: 7px;
+    padding-right: 35px;
+    font-size: 12px;
+}
+
+#find {
+    font-family: 'Trade Winds', cursive;
+}
+
+
+
+/**/

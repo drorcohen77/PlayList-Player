@@ -1,0 +1,82 @@
+/*ADD/EDIT PLAYLIST MODALS:*/
+
+.modal {
+    top: 100px;
+}
+
+.add_edit_modal {
+    height: 348px;
+    width: 650px;
+    font-family: 'Trade Winds', cursive;
+}
+
+.modal-header {
+    background-color: lightsteelblue;
+    text-align: center;
+    color: #ef0000;
+    background: #060606;
+}
+
+.modal-title {
+    font-weight: bold;
+    font-size: 25px;
+    font-family: 'Trade Winds', cursive;
+}
+
+.modal-header .close {
+    margin-top: 8px;
+    color: #ffffff;
+}
+
+.modal-body {
+    background-image: linear-gradient(#0a1829, #445586, #8fb0c3);
+}
+
+.modal_form {
+    margin-left: 0px;
+}
+
+.forms {
+    height: 250px;
+    font-family: 'Trade Winds', cursive;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: 100;
+}
+
+.add_edit_buttons {
+    position: absolute;
+    bottom: 5px;
+    border-top: 1px solid #e5e5e5;
+    height: 44px;
+    padding-top: 10px;
+}
+
+.add_edit {
+    width: 104px;
+}
+
+.reset {
+    margin-left: 67px;
+}
+
+.modal_img {
+    height: 245px;
+    padding-left: 30px;
+}
+
+.add_edit_img {
+    height: 245px;
+    width: 245px;
+}
+
+.playlist_alert {
+    padding: 7px;
+    padding-right: 35px;
+    font-size: 12px;
+}

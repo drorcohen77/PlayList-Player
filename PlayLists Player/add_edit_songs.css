@@ -1,0 +1,168 @@
+/*ADD/EDIT SONGS MODALS:*/
+
+#Modal-add-songs {
+    right: 155px;
+}
+
+.add_songs {
+    height: 350px;
+    width: 760px;
+    font-family: 'Trade Winds', cursive;
+}
+
+.edit_songs {
+    height: 350px;
+    width: 760px;
+    font-family: 'Trade Winds', cursive;
+}
+
+.add_edit_body {
+    height: 285px;
+    font-family: 'Trade Winds', cursive;
+}
+
+.song_label {
+    margin-right: 4px;
+}
+
+.song_label_n {
+    margin-right: 4px;
+    margin-left: 20px;
+}
+
+.play_songs {
+    padding-left: 0px;
+    padding-right: 0px;
+    position: absolute;
+    left: 15px;
+}
+
+#add-song {
+    font-size: 18px;
+    padding-left: 0px;
+    color: black;
+    font-weight: bold;
+}
+
+#edit-song {
+    font-size: 18px;
+    padding-left: 0px;
+    color: black;
+    font-weight: bold;
+}
+
+#finish {
+    margin-left: 365px;
+}
+
+.form-inline {
+    height: 200px;
+}
+
+#add_song {
+    height: 200px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+#add_song::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
+
+#add_song::-webkit-scrollbar {
+    width: 10px;
+}
+
+#add_song::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+    background-color: #d0d0d0;
+}
+
+.group_add {
+    margin-bottom: 20px;
+}
+
+#Modal-edit-songs {
+    right: 155px;
+}
+
+#update_songs {
+/*
+    position: absolute;
+    right: 34px;
+    bottom: 20px;
+*/
+margin-left: 365px;
+}
+
+.btn-success {
+    background-color: #2b902b;
+}
+
+.btn-danger {
+    background-color: #bd0d08;
+}
+
+#edit_song {
+    height: 200px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+#edit_song::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
+
+#edit_song::-webkit-scrollbar {
+    width: 10px;
+}
+
+#edit_song::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+    background-color: #d0d0d0;
+}
+
+.add_name {
+    margin-left: 20px;
+}
+
+.song_id {
+    padding: 0px;
+    font-size;
+    0px;
+}
+
+.lable_edit {
+    margin-right: 5px;
+}
+
+.lable_edit_name {
+    margin-right: 5px;
+    margin-left: 20px;
+}
+
+.url_input {
+    width: 300px;
+     !important
+}
+
+.name_input_n {
+    margin: 0px;
+}
+
+.name_input {
+    width: 200px;
+}
+
+.song_alert {
+    padding: 7px;
+    padding-right: 35px;
+    font-size: 12px;
+    margin-left: 75px;
+    width: 637px;
+    text-align: center;
+}
